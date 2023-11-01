@@ -5,12 +5,12 @@ button:focus-visible {
 }
 
 a:focus-visible {
-  border: 1px solid var(--text-color);
+  outline: 1px solid var(--text-color);
 }
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  font-family: var(--main-font);
+  font-family: var(--main-font, sans-serif);
   font-size: 18px;
   background-image: var(--bg-image);
   background-size: cover;
@@ -52,7 +52,6 @@ a:focus-visible {
   inset-inline-end: calc(var(--header-padding) + 28px);
   inset-block-start: var(--header-padding);
   font-size: 18px;
-  z-index: 3;
 }
 
 .header__dark-theme-decoration::after {
@@ -190,7 +189,7 @@ button:disabled {
   justify-content: center;
   align-items: center;
   margin-block-start: 40px;
-  block-size: 100vh;
+  min-block-size: 100vh;
 }
 
 .footer__title {

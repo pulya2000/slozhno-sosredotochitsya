@@ -3,10 +3,53 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root .theme_light {
+  --text-color: #353430;
+  --main-font: IBM Plex Mono, sans-serif;
+  --bg-image: url(../images/cover-image-light.png);
+  --accent-color: #FF8DCB;
+  --header-title-color: #FFC2E6;
+  --title-color: #353430;
+  --link-color: #353430;
+  --content-title-color: #353430;
+  --header-button-color: #353430;
+  --decorated-zone-color: #353430;
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+}
+
+.theme_light .header__dark-theme-decoration {
+  display: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-color: #353430;
+    --main-font: IBM Plex Mono, sans-serif;
+    --bg-image: url(../images/cover-image-light.png);
+    --accent-color: #FF8DCB;
+    --header-title-color: #FFC2E6;
+    --title-color: #353430;
+    --link-color: #353430;
+    --content-title-color: #353430;
+    --header-button-color: #353430;
+    --decorated-zone-color: #353430;
+  }
+  
+ .theme_auto .header__dark-theme-decoration {
+    display: none;
+  }
+}
+
+@media (width >= 768px) {
+  :root {
+    --content-padding: 20px;
+    --header-padding: 20px;
+  }
 }

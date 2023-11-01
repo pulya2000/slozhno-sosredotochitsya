@@ -5,11 +5,14 @@
 :root {
   --text-color: #F1B2CE;
   --main-font: IBM Plex Mono, sans-serif;
-  --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
   --accent-color: #FF0070;
   --header-title-color: #DB00FF;
+  --link-color: #FF0070;
   --title-color: #000028;
+  --content-title-color: #FF0070;
+  --header-button-color: #FF0070;
+  --decorated-zone-color: #FF0070;
   --content-padding: 10px;
   --header-padding: 10px;
 }

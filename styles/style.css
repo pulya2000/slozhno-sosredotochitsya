@@ -1,5 +1,12 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+button:focus-visible {
+  border-block-end: 1px solid var(--header-button-color);
+}
+
+a:focus-visible {
+  border: 1px solid var(--text-color);
+}
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
@@ -21,8 +28,8 @@
   content: '';
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--decorated-zone-color);
+  border-inline-end: 1px solid var(--decorated-zone-color);
   position: absolute;
   inset-block-start: var(--header-padding);
   inset-inline-end: var(--header-padding);
@@ -32,8 +39,8 @@
   content: '';
   inline-size: 25px;
   block-size: 25px;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--decorated-zone-color);
+  border-inline-start: 1px solid var(--decorated-zone-color);
   position: absolute;
   inset-block-end: var(--header-padding);
   inset-inline-start: var(--header-padding);
@@ -68,7 +75,7 @@
 }
 
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--header-button-color);
   background-color: transparent;
   border: none;
   padding: 0;
@@ -78,12 +85,12 @@
 }
 
 .header__theme-menu-button:hover {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--header-button-color);
   cursor: pointer;
 }
 
 .header__theme-menu-button_active {
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--header-button-color);
 }
 
 button:disabled {
@@ -105,7 +112,7 @@ button:disabled {
 .header__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--header-title-color);
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 4px 4px 0px #FF0070;
   line-height: 82.5%;
 }
 
@@ -143,7 +150,7 @@ button:disabled {
 
 .content__title {
   font-size: inherit;
-  color: var(--accent-color);
+  color: var(--content-title-color);
 }
 
 .content__title-paragraph {
@@ -189,7 +196,7 @@ button:disabled {
 .footer__title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--header-title-color);
-  text-shadow: 2px 2px 0px var(--accent-color);
+  text-shadow: 2px 2px 0px #FF0070;
   line-height: 82.5%;
 }
 

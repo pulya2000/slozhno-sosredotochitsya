@@ -4,9 +4,29 @@
   переключая тему
 */
 
+:root .theme_dark {
+  --text-color: #F1B2CE;
+  --main-font: IBM Plex Mono, sans-serif;
+  --bg-image: url(../images/cover-image-dark.png);
+  --accent-color: #FF0070;
+  --header-title-color: #DB00FF;
+  --link-color: #FF0070;
+  --title-color: #000028;
+  --content-title-color: #FF0070;
+  --header-button-color: #FF0070;
+  --decorated-zone-color: #FF0070;
+}
+
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+}
+
+@media (width >= 768px) {
+  :root {
+    --content-padding: 20px;
+    --header-padding: 20px;
+  }
 }

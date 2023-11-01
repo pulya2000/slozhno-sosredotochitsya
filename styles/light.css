@@ -46,10 +46,3 @@
     display: none;
   }
 }
-
-@media (width >= 768px) {
-  :root {
-    --content-padding: 20px;
-    --header-padding: 20px;
-  }
-}

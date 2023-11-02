@@ -131,7 +131,6 @@ a:focus-visible {
   justify-self: end;
   align-self: baseline;
   max-inline-size: 364px;
-  max-height: 117px;
 }
 
 .content {
@@ -141,7 +140,7 @@ a:focus-visible {
   padding: 0 var(--content-padding);
 }
 
-.content__section {
+.content__list {
   display: grid;
   gap: 20px;
 }
@@ -168,6 +167,7 @@ a:focus-visible {
 
 .content-link:hover {
   cursor: pointer;
+  border-block-end: 1px solid var(--text-color);
 }
 
 .gallery {
@@ -210,7 +210,7 @@ a:focus-visible {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-  .content__section-right {
+  .content__list-odd {
     grid-template-columns: 0.5fr 1fr;
   }
   
@@ -283,7 +283,6 @@ a:focus-visible {
   
   .header__paragraph  {
     max-inline-size: 491px;
-    max-height: 71px;
   }
 
   .header__theme-menu {
@@ -312,7 +311,7 @@ a:focus-visible {
       min-inline-size: 30vw;  
    }
 
- .content__section-right {
+ .content__list-odd {
   column-gap: 10px;
  }
 }

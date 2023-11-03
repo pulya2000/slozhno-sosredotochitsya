@@ -120,11 +120,6 @@ a:focus-visible {
   font-size: inherit;
   font-family: inherit;
   font-weight: 700;
-  margin-block-end: -10px;
-}
-
-.title-margin {
-  margin-block-end: 0;
 }
 
 .header__paragraph {
@@ -138,6 +133,11 @@ a:focus-visible {
   gap: 50px;
   margin-block-start: 40px;
   padding: 0 var(--content-padding);
+}
+
+.content__section {
+  display: grid;
+  gap: 20px;
 }
 
 .content__list {
@@ -156,6 +156,7 @@ a:focus-visible {
 
 .content__paragraph {
   color: var(--text-color);
+  margin-block-start: 10px;
 }
 
 .content-link {
@@ -168,6 +169,11 @@ a:focus-visible {
 .content-link:hover {
   cursor: pointer;
   border-block-end: 1px solid var(--text-color);
+}
+
+.content__section-gallery {
+  display: grid;
+  gap: 10px;
 }
 
 .gallery {
@@ -210,18 +216,8 @@ a:focus-visible {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   }
 
-  .content__list-odd {
+  .content__section-odd {
     grid-template-columns: 0.5fr 1fr;
-  }
-  
-  .article-odd {
-    display: grid;
-    gap: 20px;
-  }
-
-  .article-even {
-    display: grid;
-    gap: 20px;
   }
 
   .content__min-title {
@@ -301,17 +297,17 @@ a:focus-visible {
     margin-block-start: 19vh;
   }
 
-  .article-even {
-    grid-template-rows: repeat(2, auto);
+  .content__section-odd {
+    gap: 10px;
+  }
+
+  .content__list-even {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-flow: column;
     }
 
-    .content__min-title {
-      min-inline-size: 30vw;  
-   }
+  .content__min-title {
+    min-inline-size: 30vw;  
+  }
 
- .content__list-odd {
-  column-gap: 10px;
- }
 }

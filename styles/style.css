@@ -150,6 +150,10 @@ a:focus-visible {
   color: var(--content-title-color);
 }
 
+.content__title-transfer {
+  grid-row: 1/3;
+}
+
 .content__title-paragraph {
   font-weight: 400;
 }
@@ -298,7 +302,7 @@ a:focus-visible {
   }
 
   .content__section-odd {
-    gap: 10px;
+    gap: 20px 10px;
   }
 
   .content__list-even {
